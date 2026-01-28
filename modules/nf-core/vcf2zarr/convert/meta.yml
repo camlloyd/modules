@@ -1,7 +1,6 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "vcf2zarr_convert"
-description: Convert VCF data to the VCF Zarr specification reliably, in
-  parallel or distributed over a cluster
+description: Convert VCF data to the VCF Zarr specification reliably, in parallel
+  or distributed over a cluster
 keywords:
   - vcf
   - zarr
@@ -53,6 +52,29 @@ output:
 
         ontologies:
           - edam: http://edamontology.org/format_3750 # YAML
+  versions_vcf2zarr:
+    - - ${task.process}:
+          type: string
+          description: The name of the process
+      - vcf2zarr:
+          type: string
+          description: The name of the tool
+      - vcf2zarr --version |& sed -n "s/.* //p":
+          type: eval
+          description: The expression to obtain the version of the tool
+
+topics:
+  versions:
+    - - ${task.process}:
+          type: string
+          description: The name of the process
+      - vcf2zarr:
+          type: string
+          description: The name of the tool
+      - vcf2zarr --version |& sed -n "s/.* //p":
+          type: eval
+          description: The expression to obtain the version of the tool
+
 authors:
   - "@camlloyd"
 maintainers:
