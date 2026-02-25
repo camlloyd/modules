@@ -19,12 +19,13 @@ process CRABZ_DECOMPRESS {
 
     script:
     def args = task.ext.args ?: ''
-    def prefix = task.ext.prefix ?: "${archive}"
+    def name = archive.toString() - '.gz'
     """
     crabz \\
         $args \\
+        -d \\
         -p $task.cpus \\
-        -o ${prefix} \\
+        -o ${name} \\
         $archive
 
     cat <<-END_VERSIONS > versions.yml
@@ -34,9 +35,9 @@ process CRABZ_DECOMPRESS {
     """
 
     stub:
-    def prefix = task.ext.prefix ?: "${archive}"
+    def name = archive.toString() - '.gz'
     """
-    touch ${prefix}
+    touch ${name}
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
