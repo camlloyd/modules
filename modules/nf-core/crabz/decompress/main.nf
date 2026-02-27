@@ -12,7 +12,7 @@ process CRABZ_DECOMPRESS {
 
     output:
     tuple val(meta), path("*.*"), emit: file
-    path "versions.yml"           , emit: versions
+    tuple val("${task.process}"), val('crabz'), val('0.10.0'), emit: versions_crabz, topic: versions
 
     when:
     task.ext.when == null || task.ext.when
@@ -27,21 +27,10 @@ process CRABZ_DECOMPRESS {
         -p ${task.cpus} \\
         -o ${name} \\
         ${archive}
-
-    cat <<-END_VERSIONS > versions.yml
-    "${task.process}":
-        crabz: \$(crabz --version |& sed 's/[^:]*://')
-    END_VERSIONS
     """
-
     stub:
     def name = archive.toString() - '.gz'
     """
     touch ${name}
-
-    cat <<-END_VERSIONS > versions.yml
-    "${task.process}":
-        crabz: \$(crabz --version |& sed 's/[^:]*://')
-    END_VERSIONS
     """
 }
