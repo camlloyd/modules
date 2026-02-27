@@ -22,11 +22,11 @@ process CRABZ_DECOMPRESS {
     def name = archive.toString() - '.gz'
     """
     crabz \\
-        $args \\
+        ${args} \\
         -d \\
-        -p $task.cpus \\
+        -p ${task.cpus} \\
         -o ${name} \\
-        $archive
+        ${archive}
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
