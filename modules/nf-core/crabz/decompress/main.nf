@@ -28,6 +28,7 @@ process CRABZ_DECOMPRESS {
         -o ${name} \\
         ${archive}
     """
+
     stub:
     def name = archive.toString() - '.gz'
     """
