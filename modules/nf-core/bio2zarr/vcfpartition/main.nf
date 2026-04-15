@@ -4,8 +4,8 @@ process BIO2ZARR_VCFPARTITION {
 
     conda "${moduleDir}/environment.yml"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        'https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/77/7713d869c8c8259c10701c95fc105bad8bcfbd6735de6941a47c9e6e26e9bb2f/data':
-        'community.wave.seqera.io/library/bio2zarr:0.1.8--c2c92dd3f64fb0f9' }"
+        'https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/e5/e59f436b2c0a983ed5f6dd9e2f3e6dbae29f2485eed7619eecf95728a21452bc/data':
+        'community.wave.seqera.io/library/bio2zarr:0.2.0--2753abf84a960f5e' }"
 
     input:
     tuple val(meta), path(vcf), path(index)
