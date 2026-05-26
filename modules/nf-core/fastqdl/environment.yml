@@ -4,5 +4,5 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
-  - bioconda::fastq-dl=3.0.1
+  - bioconda::fastq-dl=4.0.1
   - conda-forge::legacy-cgi=2.6.2
