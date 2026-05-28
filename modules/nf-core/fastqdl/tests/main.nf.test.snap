@@ -29,7 +29,7 @@
                     [
                         "FASTQDL",
                         "fastq-dl",
-                        "3.0.1"
+                        "4.0.1"
                     ]
                 ],
                 "fastq": [
@@ -59,15 +59,15 @@
                     [
                         "FASTQDL",
                         "fastq-dl",
-                        "3.0.1"
+                        "4.0.1"
                     ]
                 ]
             }
         ],
-        "timestamp": "2026-02-24T14:43:08.173892094",
+        "timestamp": "2026-05-26T09:24:16.166801276",
         "meta": {
-            "nf-test": "0.9.4",
-            "nextflow": "25.10.4"
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.2"
         }
     },
     "fastqdl - experiment": {
@@ -90,7 +90,7 @@
                         {
                             "id": "test"
                         },
-                        "test-run-info.tsv:md5,fc6e0408adc4991ce5bc0982e9552536"
+                        "test-run-info.tsv:md5,a24e465dd7c6e920afd443d743ebbb40"
                     ]
                 ],
                 "2": [
@@ -100,7 +100,7 @@
                     [
                         "FASTQDL",
                         "fastq-dl",
-                        "3.0.1"
+                        "4.0.1"
                     ]
                 ],
                 "fastq": [
@@ -120,7 +120,7 @@
                         {
                             "id": "test"
                         },
-                        "test-run-info.tsv:md5,fc6e0408adc4991ce5bc0982e9552536"
+                        "test-run-info.tsv:md5,a24e465dd7c6e920afd443d743ebbb40"
                     ]
                 ],
                 "runmergers": [
@@ -130,15 +130,15 @@
                     [
                         "FASTQDL",
                         "fastq-dl",
-                        "3.0.1"
+                        "4.0.1"
                     ]
                 ]
             }
         ],
-        "timestamp": "2026-05-21T19:52:02.170889407",
+        "timestamp": "2026-05-26T09:22:23.393069547",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.1"
+            "nextflow": "26.04.2"
         }
     },
     "fastqdl - experiment - stub": {
@@ -171,7 +171,7 @@
                     [
                         "FASTQDL",
                         "fastq-dl",
-                        "3.0.1"
+                        "4.0.1"
                     ]
                 ],
                 "fastq": [
@@ -201,15 +201,15 @@
                     [
                         "FASTQDL",
                         "fastq-dl",
-                        "3.0.1"
+                        "4.0.1"
                     ]
                 ]
             }
         ],
-        "timestamp": "2026-02-24T14:44:59.881424218",
+        "timestamp": "2026-05-26T09:26:09.395456716",
         "meta": {
-            "nf-test": "0.9.4",
-            "nextflow": "25.10.4"
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.2"
         }
     },
     "fastqdl - run": {
@@ -232,7 +232,7 @@
                         {
                             "id": "test"
                         },
-                        "test-run-info.tsv:md5,fc6e0408adc4991ce5bc0982e9552536"
+                        "test-run-info.tsv:md5,a24e465dd7c6e920afd443d743ebbb40"
                     ]
                 ],
                 "2": [
@@ -242,7 +242,7 @@
                     [
                         "FASTQDL",
                         "fastq-dl",
-                        "3.0.1"
+                        "4.0.1"
                     ]
                 ],
                 "fastq": [
@@ -262,7 +262,7 @@
                         {
                             "id": "test"
                         },
-                        "test-run-info.tsv:md5,fc6e0408adc4991ce5bc0982e9552536"
+                        "test-run-info.tsv:md5,a24e465dd7c6e920afd443d743ebbb40"
                     ]
                 ],
                 "runmergers": [
@@ -272,15 +272,15 @@
                     [
                         "FASTQDL",
                         "fastq-dl",
-                        "3.0.1"
+                        "4.0.1"
                     ]
                 ]
             }
         ],
-        "timestamp": "2026-05-21T19:50:20.968236389",
+        "timestamp": "2026-05-26T09:20:34.881332488",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.1"
+            "nextflow": "26.04.2"
         }
     }
 }
